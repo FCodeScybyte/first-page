@@ -1,0 +1,172 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    /*margin: 0;*/
+    background-color: #efefef;
+    /*background: linear-gradient(to bottom right, #3498db, #1f3a4a);*/
+    /*background: linear-gradient(to bottom right, #182842, #a62e44);*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    /*background-color: #364552;*/
+    /*background-color: #005536;*/
+    background-color: #003049;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.container-number {
+    transition: box-shadow 0.3s ease; 
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: left;
+}
+
+header h3 a {
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    text-align: right;
+    list-style: none; /*Anula los puntos de la lista*/
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-table;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease, border 0.3s ease; /* Agrega transiciones suaves para color y borde */
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 6px 3px 0px rgba(207, 203, 203, 0.1);
+    color: #ffff; /* Cambia el color del texto al hacer hover */
+    background-color: #212529; /* Con transparencia del 50% */
+    border-bottom-left-radius: 0.5rem;
+    margin: 1rem 0;
+    padding: 0.25rem 0.25rem;
+    cursor: pointer;
+}
+
+section article {
+    transition: box-shadow 0.3s ease; 
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+section article a {
+    text-decoration: none;
+    color: #212529;
+    text-decoration-color: #263f26;
+}
+
+section article:hover {
+    box-shadow: 0.4rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+section article h2, section article p {
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.categoria {
+    width: 600px;
+    margin: 1rem;
+}
+
+.ruleta {
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+div img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+}
+
+div img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 3;
+    filter: contrast(120%)
+}
+
+footer {
+    position: relative;
+    /*background-color: #222;*/
+    /*background: linear-gradient(to bottom right, #444343, #222);*/
+    background: linear-gradient(to bottom right, #182842, #a62e44);
+    color: #fff;
+    padding: 2rem;
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+}
+
+footer div { 
+   float: right;
+}
+
+.red-social h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(130, 120, 29);
+}
